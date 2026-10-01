@@ -1,4 +1,3 @@
-import React from 'react';
 import {navLinks} from "../utils/constants.js";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
@@ -14,13 +13,19 @@ export default function Navbar() {
         }
       });
 
-      navTween.fromTo('nav', {background:'transparent'},
+      navTween.fromTo('nav', {background: 'transparent'},
         {
           backgroundColor: '#00000050',
           backgroundFilter: 'blur(10px)',
           duration: 1,
           ease: 'power1.inOut'
         });
+
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: 'nav',
+        }
+      })
     }
   );
 
