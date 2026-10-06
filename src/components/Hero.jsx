@@ -48,7 +48,7 @@ export function Hero() {
           scrub: true,
         },
       })
-      .to(".right-leaf", {y: 200}, 0)
+      .to(".right-leaf", {y: 400}, 0)
       .to(".left-leaf", {y: -200}, 0)
       .to(".arrow", {y: 100}, 0);
 
@@ -76,7 +76,7 @@ export function Hero() {
   return (
     <>
 
-      <section id="hero" className="absolute inset-0 size-full bg-[url('/images/noise.png')]
+      <section id="hero" className="noisy
     relative z-10 min-h-dvh w-full border border-transparent
     ">
         <div className="title font-modern-negra text-center leading-none mt-40 md:mt-32">
